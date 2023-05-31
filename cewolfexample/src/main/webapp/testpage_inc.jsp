@@ -70,10 +70,10 @@
             id="testXYData">
             <cewolf:param 
                 name="maxVal" 
-                value="<%= new Integer(params.getMaxVal()) %>"/>
+                value="<%= "" + params.getMaxVal() %>"/>
             <cewolf:param 
                 name="minVal" 
-                value="<%= new Integer(params.getMinVal())  %>"/>
+                value="<%= "" + params.getMinVal()  %>"/>
         </cewolf:producer>
     </cewolf:data>
     <cewolf:chartpostprocessor 

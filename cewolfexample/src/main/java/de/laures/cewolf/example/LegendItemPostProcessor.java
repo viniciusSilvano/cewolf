@@ -1,15 +1,14 @@
 package de.laures.cewolf.example;
 
-import java.awt.Color;
 import java.io.Serializable;
 import java.util.Map;
-
-import de.laures.cewolf.ChartPostProcessor;
 
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.LegendItem;
 import org.jfree.chart.LegendItemCollection;
 import org.jfree.chart.plot.CategoryPlot;
+
+import de.laures.cewolf.ChartPostProcessor;
 
 public class LegendItemPostProcessor implements ChartPostProcessor, Serializable
 {
@@ -20,7 +19,7 @@ public class LegendItemPostProcessor implements ChartPostProcessor, Serializable
 		for (int i = 0; i < liColl.getItemCount(); i++) {
 			LegendItem li = liColl.get(i);
 			String colorStr = (String) params.get(String.valueOf(i));
-			li.setLabelPaint(Color.decode(colorStr));
+			//li.setLabelPaint(Color.decode(colorStr));
 		}
 	}
 }

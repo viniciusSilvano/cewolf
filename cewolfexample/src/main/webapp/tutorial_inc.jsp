@@ -22,9 +22,7 @@ This page shows the resulting chart when finishing the Cewolf tutorial on the <a
 <p>
 
 <cewolf:img chartid="line" renderer="/cewolf" width="400" height="300">
-    <cewolf:map linkgeneratorid="pageViews" tooltipgeneratorid="pageViews"
-    	tooltipRendererClass="de.laures.cewolf.tooltips.ITooltipRenderer$Overlib"
-    />
+    <cewolf:map linkgeneratorid="pageViews" tooltipgeneratorid="pageViews"/>
 </cewolf:img>
 <P>
 </BODY>

@@ -534,7 +534,7 @@ Stacked Area (svg)<br>
 
 <% // example showing how to add custom chart type via adding custom factory
    // notice the name of the type and the dataset here
-  CewolfChartFactory.registerFactory(new CewolfChartFactory("CustomChartType", CategoryDataset.class) {
+  CewolfChartFactory.registerFactory(new CewolfChartFactory("CustomChartType") {
     public JFreeChart getChartInstance(String title, String xAxisLabel, String yAxisLabel, org.jfree.data.general.Dataset data)
             throws de.laures.cewolf.taglib.IncompatibleDatasetException {
             // well this is same as 'stackedarea' type
